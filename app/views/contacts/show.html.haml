@@ -1,0 +1,15 @@
+.modal-header 
+  %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+    %span{"aria-hidden" => "true"} &times;
+  %h3.modal-title
+    Contact Details
+.modal-body
+  .row
+    %table.table.table-striped.table-hover.table-condensed
+      %tbody
+        %tr
+          %th.col-md-6.text-center Name
+          %th.col-md-6.text-center Mobile Number
+        %tr
+          %td.col-md-6.text-center= @contact.name
+          %td.col-md-6.text-center= @contact.number

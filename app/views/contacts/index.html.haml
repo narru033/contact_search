@@ -1,0 +1,9 @@
+= form_tag contacts_path, :method => 'get', :id => "contacts_search" do
+  .col-md-6.col-sm-12.col-xs-12.form-group.pull-right.p-r-0
+    = text_field_tag :search, params[:search], class: 'form-control input-lg', placeholder: 'Search Name or Mobile Number'
+  #contacts
+    = render 'contacts'
+
+#dialog.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", "data-backdrop" => "static", "data-keyboard" => "true", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
