@@ -10,4 +10,4 @@
 	Contact.create(name: "#{(0...6).map { (65 + rand(26)).chr }.join}-#{c}", number: "#{rand(10 ** 10)}")
 end
 
-Puts "------------ Created Contact list ---------------"
+puts "------------ Created Contact list ---------------"
