@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-20.times do |c|
+50.times do |c|
 	Contact.create(name: "#{(0...6).map { (65 + rand(26)).chr }.join}-#{c}", number: "#{rand(10 ** 10)}")
 end
 
